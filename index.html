@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        //codigo javascript
+    </script>
+
+    <!-- ERRADO!!!
+        <script type="text/javascript" src="script.js">
+            //codigo javascript
+        </script>
+    -->
+</head>
+
+<body onload="alert('Olar!');">
+    <div class="main-container">
+        <header class="block">
+            <h1 class="titular">Saudações <img src="vulcan.png" /></h1>
+        </header>
+        <!-- CONTAINER -->
+        <div class="left-container container">
+            <div id="ref-container" class="profile block calendar-month" style="z-index: 0;">
+                <!-- PROFILE (MIDDLE-CONTAINER) -->
+                <h1 class="titular"> Menu </h1>
+                <div class="aba" id="aleatoria" style="z-index: 1;">
+                    <h2> Saudação aleatória </h2>
+                    <a class="sign-in button" onclick="saudacaoAleatoria();"> GO! </a>
+                </div>
+                <div class="aba" id="busca" style="z-index: 0;">
+                    <h2> Saudação por idioma: </h2>
+                    <input id="input-busca-idioma" type="text" />
+                    <a class="sign-in button" id="btn-busca-idioma"> GO! </a>
+                </div>
+                <div class="aba" id="add-saudacao" style="z-index: 0;">
+                    <h2> Adicionar saudacao: </h2>
+
+                    <input id="input-add-sigla" type="text" placeholder="sigla" onkeydown="inputSaudacaoFocus(event)" />
+                    <input id="input-add-saudacao" type="text" placeholder="saudacao" />
+
+                </div>
+                <ul class="profile-options horizontal-list">
+                    <li class="btn-aba comments" name="aleatoria">
+                        <span class="icon fa fa-random scnd-font-color" name="aleatoria"></span>
+                    </li>
+                    <li class="btn-aba views" name="busca">
+                        <span class="icon fa fa-search scnd-font-color" name="busca"></span>
+                    </li>
+                    <li class="btn-aba likes" name="add-saudacao">
+                        <span class="icon fa fa-plus scnd-font-color" name="add-saudacao"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-container container">
+            <div id="ref-container" class="profile block menu-box" style="z-index: 0;">
+                <!-- PROFILE (MIDDLE-CONTAINER) -->
+                <h1 class="titular"> Chat </h1>
+                <div id="chat">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
